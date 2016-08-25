@@ -5,10 +5,30 @@ var generators = require('yeoman-generator');
 var _ = require('lodash');
 
 
-
-
 module.exports = generators.Base.extend({
-    method1: function(){
-        this.log('hello world');
+    constructor: function(){
+        generators.Base.apply(this, arguments);
+
+    },
+
+    initializing: function(){
+    },
+    prompting: function(){
+        this.fs.copyTpl
+    },
+    configuring: function(){
+    },
+    writing: function(){
+    },
+    conflicts: function(){
+    },
+    install: function(){
+    },
+    end: function(){
     }
+
+
 });
+
+
+
